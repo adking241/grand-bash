@@ -9,7 +9,9 @@ class TestGrandBashArray < Minitest::Test #camelcase with class name otherwise c
 
 	def test_returns_array_with_no_matches
 		my_ticket = "1234"
-		winning_ticket = ["1233", "5471", "1564"]
-		assert_equal([], ticket_creation(winning_ticket, my_ticket))
+		winning_ticket = ["1236", "5471", "1564"]
+		assert_equal([], grand_bash(winning_ticket, my_ticket))
 	end
+
+	
 end
